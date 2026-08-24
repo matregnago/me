@@ -7,6 +7,7 @@ export const MainTabs = () => {
         <TabsList variant="line">
           <TabsTrigger value="projects">Projects</TabsTrigger>
           <TabsTrigger value="experience">Experience</TabsTrigger>
+          <TabsTrigger value="experience">Education</TabsTrigger>
           <TabsTrigger value="skills">Skills</TabsTrigger>
           <TabsTrigger value="blog">Blog</TabsTrigger>
         </TabsList>
@@ -17,6 +18,10 @@ export const MainTabs = () => {
 
         <TabsContent value="experience">
           insane experience
+        </TabsContent>
+
+        <TabsContent value="education">
+          some random schools kekw
         </TabsContent>
 
         <TabsContent value="skills">
