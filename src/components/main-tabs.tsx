@@ -3,7 +3,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs"
 import { ExperienceEntry } from "./experience"
 import { ProjectEntry } from "./project"
 import { EducationEntry } from "./education"
-import { PencilLine } from "lucide-react"
+import { FolderOpen, PencilLine } from "lucide-react"
 
 export const MainTabs = () => {
   const experiences: Experience[] = [
@@ -66,6 +66,15 @@ export const MainTabs = () => {
       img: "https://static.boredpanda.com/blog/wp-content/uploads/2025/10/funny-cat-memes-go-hard-cover_675.jpg",
       source: "https://github.com/matregnago",
     },
+    {
+      name: "vLLM Benchmark aaaa",
+      summary: "teste de benchmark",
+      description:
+        "documentacao documentacao documentacao documentacao documentacao documentacao documentacao documentacao",
+      status: "complete",
+      img: "https://static.boredpanda.com/blog/wp-content/uploads/2025/10/funny-cat-memes-go-hard-cover_675.jpg",
+      source: "https://github.com/matregnago",
+    },
   ]
 
   const educations: Education[] = [
@@ -75,16 +84,36 @@ export const MainTabs = () => {
       school: "UFRGS",
       description: "Advisor: Schnorr",
       startDate: "mar 2026",
-      endDate: "Present",
+      endDate: "mar 2028",
       status: "in-progress"
+    },
+    {
+      degree: "Bachelor",
+      field: "Computer Science",
+      school: "UCS",
+      description: "3.6/4 GPA",
+      startDate: "mar 2022",
+      endDate: "dec 2025",
+      status: "complete"
     }
   ]
   return (
     <section>
       <Tabs defaultValue="projects">
         <TabsList variant="line">
-          <TabsTrigger value="projects">Projects</TabsTrigger>
-          <TabsTrigger value="experience">Experience</TabsTrigger>
+          <TabsTrigger value="projects">
+            <div className="flex flex-row gap-1.5 items-center">
+              <FolderOpen className="size-4" />
+              <p>Projects</p>
+          </div>
+
+          </TabsTrigger>
+          <TabsTrigger value="experience">
+            <div className="flex flex-row gap-1.5 items-center">
+              <FolderOpen className="size-4" />
+              <p>Experience</p>
+          </div>
+          </TabsTrigger>
           <TabsTrigger value="education">Education</TabsTrigger>
           <TabsTrigger value="blog">Blog</TabsTrigger>
         </TabsList>
