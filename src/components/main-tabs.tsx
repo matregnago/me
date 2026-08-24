@@ -1,6 +1,9 @@
-import type { Experience } from "@/lib/types"
+import type { Education, Experience, Project } from "@/lib/types"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs"
 import { ExperienceEntry } from "./experience"
+import { ProjectEntry } from "./project"
+import { EducationEntry } from "./education"
+import { PencilLine } from "lucide-react"
 
 export const MainTabs = () => {
   const experiences: Experience[] = [
@@ -53,7 +56,29 @@ export const MainTabs = () => {
       ],
     },
   ]
+  const projects: Project[] = [
+    {
+      name: "vLLM Benchmark aaaa",
+      summary: "teste de benchmark",
+      description:
+        "documentacao documentacao documentacao documentacao documentacao documentacao documentacao documentacao",
+      status: "complete",
+      img: "https://static.boredpanda.com/blog/wp-content/uploads/2025/10/funny-cat-memes-go-hard-cover_675.jpg",
+      source: "https://github.com/matregnago",
+    },
+  ]
 
+  const educations: Education[] = [
+    {
+      degree: "Masters",
+      field: "Computer Science",
+      school: "UFRGS",
+      description: "Advisor: Schnorr",
+      startDate: "mar 2026",
+      endDate: "Present",
+      status: "in-progress"
+    }
+  ]
   return (
     <section>
       <Tabs defaultValue="projects">
@@ -61,23 +86,38 @@ export const MainTabs = () => {
           <TabsTrigger value="projects">Projects</TabsTrigger>
           <TabsTrigger value="experience">Experience</TabsTrigger>
           <TabsTrigger value="education">Education</TabsTrigger>
-          <TabsTrigger value="skills">Skills</TabsTrigger>
           <TabsTrigger value="blog">Blog</TabsTrigger>
         </TabsList>
-        <TabsContent value="projects">
-          i dont have any good projects lol
+        <TabsContent className="py-2" value="projects">
+          {projects.map((project, idx) => (
+            <ProjectEntry project={project} key={idx} />
+          ))}
         </TabsContent>
 
         <TabsContent className="py-2" value="experience">
           {experiences.map((exp, idx) => (
-            <ExperienceEntry experience={exp} isLast={idx === experiences.length -1} key={idx} />
+            <ExperienceEntry
+              experience={exp}
+              isLast={idx === experiences.length - 1}
+              key={idx}
+            />
           ))}
         </TabsContent>
 
-        <TabsContent value="education">some random schools kekw</TabsContent>
+        <TabsContent value="education">
+          {educations.map((education, idx) => (
+            <EducationEntry education={education} key={idx} />
+          ))}
+        </TabsContent>
 
-        <TabsContent value="skills">none kekw</TabsContent>
-        <TabsContent value="blog">maybe one day</TabsContent>
+        <TabsContent value="blog">
+          <div className="h-64 flex flex-col items-center justify-center gap-2">
+
+            <PencilLine className="size-14 border p-2 bg-card rounded-lg" />
+            <p className="text-base">Nothing to see here.</p>
+          </div>
+
+        </TabsContent>
       </Tabs>
     </section>
   )
