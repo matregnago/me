@@ -13,7 +13,7 @@ export const Header = () => {
           <a href="https://github.com/matregnago">
             github: <strong>@matregnago</strong>
           </a>
-          <a>email: matregnago [at] inf (dot) ufrgs (dot) com </a>
+          <a>email: me [at] matregnago (dot) com </a>
         </div>
       </header>
     </section>
