@@ -6,7 +6,21 @@
       "description": "documentacao documentacao documentacao documentacao documentacao documentacao documentacao documentacao",
       "status": "active",
       "img": "https://static.boredpanda.com/blog/wp-content/uploads/2025/10/funny-cat-memes-go-hard-cover_675.jpg",
-      "source": "https://github.com/matregnago"
+      "source": "https://github.com/matregnago",
+      "stack": [
+        { "name": "React", "color": "#61DAFB" },
+        { "name": "TypeScript", "color": "#3178C6" },
+        { "name": "Vite", "color": "#9c36d7" },
+        { "name": "Tailwind CSS", "color": "#06b6d4" },
+        { "name": "Hono", "color": "#E36002" },
+        { "name": "Node.js", "color": "#84bf08" },
+        { "name": "MongoDB", "color": "#08ee69" },
+        { "name": "RabbitMQ", "color": "#FF6600" },
+        { "name": "Python", "color": "#3776AB" },
+        { "name": "Ollama", "color": "#080808" },
+        { "name": "Docker", "color": "#2496ED" },
+        { "name": "Jenkins", "color": "#d13e38" }
+      ]
     },
     {
       "name": "DLA Fractal CUDA",
@@ -14,7 +28,21 @@
       "description": "documentacao documentacao documentacao documentacao documentacao documentacao documentacao documentacao",
       "status": "completed",
       "img": "https://static.boredpanda.com/blog/wp-content/uploads/2025/10/funny-cat-memes-go-hard-cover_675.jpg",
-      "source": "https://github.com/matregnago"
+      "source": "https://github.com/matregnago",
+      "stack": [
+        { "name": "React", "color": "#61DAFB" },
+        { "name": "TypeScript", "color": "#3178C6" },
+        { "name": "Vite", "color": "#9c36d7" },
+        { "name": "Tailwind CSS", "color": "#06b6d4" },
+        { "name": "Hono", "color": "#E36002" },
+        { "name": "Node.js", "color": "#84bf08" },
+        { "name": "MongoDB", "color": "#08ee69" },
+        { "name": "RabbitMQ", "color": "#FF6600" },
+        { "name": "Python", "color": "#3776AB" },
+        { "name": "Ollama", "color": "#080808" },
+        { "name": "Docker", "color": "#2496ED" },
+        { "name": "Jenkins", "color": "#d13e38" }
+      ]
     },
     {
       "name": "WirePenguin",
@@ -22,7 +50,21 @@
       "description": "documentacao documentacao documentacao documentacao documentacao documentacao documentacao documentacao",
       "status": "completed",
       "img": "https://static.boredpanda.com/blog/wp-content/uploads/2025/10/funny-cat-memes-go-hard-cover_675.jpg",
-      "source": "https://github.com/matregnago"
+      "source": "https://github.com/matregnago",
+      "stack": [
+        { "name": "React", "color": "#61DAFB" },
+        { "name": "TypeScript", "color": "#3178C6" },
+        { "name": "Vite", "color": "#9c36d7" },
+        { "name": "Tailwind CSS", "color": "#06b6d4" },
+        { "name": "Hono", "color": "#E36002" },
+        { "name": "Node.js", "color": "#84bf08" },
+        { "name": "MongoDB", "color": "#08ee69" },
+        { "name": "RabbitMQ", "color": "#FF6600" },
+        { "name": "Python", "color": "#3776AB" },
+        { "name": "Ollama", "color": "#080808" },
+        { "name": "Docker", "color": "#2496ED" },
+        { "name": "Jenkins", "color": "#d13e38" }
+      ]
     },
     {
       "name": "vLLM Parallelism Benchmark",
@@ -30,7 +72,21 @@
       "description": "documentacao documentacao documentacao documentacao documentacao documentacao documentacao documentacao",
       "status": "completed",
       "img": "https://static.boredpanda.com/blog/wp-content/uploads/2025/10/funny-cat-memes-go-hard-cover_675.jpg",
-      "source": "https://github.com/matregnago"
+      "source": "https://github.com/matregnago",
+      "stack": [
+        { "name": "React", "color": "#61DAFB" },
+        { "name": "TypeScript", "color": "#3178C6" },
+        { "name": "Vite", "color": "#9c36d7" },
+        { "name": "Tailwind CSS", "color": "#06b6d4" },
+        { "name": "Hono", "color": "#E36002" },
+        { "name": "Node.js", "color": "#84bf08" },
+        { "name": "MongoDB", "color": "#08ee69" },
+        { "name": "RabbitMQ", "color": "#FF6600" },
+        { "name": "Python", "color": "#3776AB" },
+        { "name": "Ollama", "color": "#080808" },
+        { "name": "Docker", "color": "#2496ED" },
+        { "name": "Jenkins", "color": "#d13e38" }
+      ]
     },
     {
       "name": "Asteroid Way",
@@ -38,7 +94,21 @@
       "description": "documentacao documentacao documentacao documentacao documentacao documentacao documentacao documentacao",
       "status": "completed",
       "img": "https://static.boredpanda.com/blog/wp-content/uploads/2025/10/funny-cat-memes-go-hard-cover_675.jpg",
-      "source": "https://github.com/matregnago"
+      "source": "https://github.com/matregnago",
+      "stack": [
+        { "name": "React", "color": "#61DAFB" },
+        { "name": "TypeScript", "color": "#3178C6" },
+        { "name": "Vite", "color": "#9c36d7" },
+        { "name": "Tailwind CSS", "color": "#06b6d4" },
+        { "name": "Hono", "color": "#E36002" },
+        { "name": "Node.js", "color": "#84bf08" },
+        { "name": "MongoDB", "color": "#08ee69" },
+        { "name": "RabbitMQ", "color": "#FF6600" },
+        { "name": "Python", "color": "#3776AB" },
+        { "name": "Ollama", "color": "#080808" },
+        { "name": "Docker", "color": "#2496ED" },
+        { "name": "Jenkins", "color": "#d13e38" }
+      ]
     }
   ]
 }

@@ -34,16 +34,15 @@ export const EducationEntry = ({ education }: EducationEntryProps) => {
                 {education.degree} in {education.field}
               </h1>
               <div className="mt-1 flex flex-wrap items-center gap-x-3 gap-y-1 text-sm text-muted-foreground">
-                  <span className="flex items-center gap-1.5">
-                      <University className="size-4"/>
-                      {education.school}
-                  </span>
                 <span className="flex items-center gap-1.5">
-                  <Calendar className="size-4"/>
-                      {education.startDate} — {education.endDate}
-                  </span>
+                  <University className="size-4" />
+                  {education.school}
+                </span>
+                <span className="flex items-center gap-1.5">
+                  <Calendar className="size-4" />
+                  {education.startDate} — {education.endDate}
+                </span>
               </div>
-
               <p className="mt-3">{education.description}</p>
             </div>
           </div>

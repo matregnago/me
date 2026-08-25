@@ -23,9 +23,24 @@ export function ProjectEntry({ project }: ProjectEntryProps) {
           <StatusBadge status={project.status} />
         </CardAction>
       </CardHeader>
-      <CardContent>
+      <CardContent className="space-y-3">
         <img src={project.img} />
-        <p className="text-justify my-3">{project.description}</p>
+        <p className="text-justify">{project.description}</p>
+
+        {project.stack && (
+            <div className="flex flex-wrap gap-1.5">
+                {project.stack.map((tech) => (
+                    <div
+                        key={tech.name}
+                        className="flex items-center gap-1 rounded-full border border-border bg-muted/50 px-2 py-0.5"
+                    >
+                        <span className="size-1.5 rounded-full" style={{ backgroundColor: tech.color }} />
+                        <span className="text-xs">{tech.name}</span>
+                    </div>
+                ))}
+            </div>
+        )}
+
         <Button>Source code</Button>
       </CardContent>
     </Card>

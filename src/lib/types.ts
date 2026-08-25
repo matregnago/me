@@ -7,6 +7,7 @@ export type Project = {
   description: string
   source: string
   status: Status
+  stack?: Array<{ name: string; color: string }>
 }
 
 export type Experience = {
