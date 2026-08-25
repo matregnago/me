@@ -2,7 +2,7 @@ export const Header = () => {
   return (
     <section>
       <header className="flex flex-col gap-3 text-justify leading-relaxed">
-        <h1 className="text-3xl">Hi, I'm Matheus</h1>
+        <h1 className="text-4xl">Hi, I'm Matheus</h1>
         <p className="text-base text-muted-foreground">
           I'm a Software Engineer and a Masters student at UFRGS at the
           High-Performance Computing Group (GPPD). I combine domain knowledge
@@ -18,7 +18,7 @@ export const Header = () => {
           </div>
           <div className="flex gap-1">
             <p>email:</p>
-            <a className="hover:underline" href="https://github.com/matregnago">
+            <a className="hover:underline" href="mailto:me@matregnago.com">
               <strong>me [at] matregnago (dot) com</strong>
             </a>
           </div>

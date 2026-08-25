@@ -4,7 +4,7 @@
       "name": "Lantify",
       "summary": "teste de benchmark",
       "description": "documentacao documentacao documentacao documentacao documentacao documentacao documentacao documentacao",
-      "img": "https://static.boredpanda.com/blog/wp-content/uploads/2025/10/funny-cat-memes-go-hard-cover_675.jpg",
+      "img": "/lantify.png",
       "source": "https://github.com/matregnago",
       "stack": [
         { "name": "React", "color": "#61DAFB" },
@@ -25,7 +25,7 @@
       "name": "DLA Fractal CUDA",
       "summary": "teste de benchmark",
       "description": "documentacao documentacao documentacao documentacao documentacao documentacao documentacao documentacao",
-      "img": "https://static.boredpanda.com/blog/wp-content/uploads/2025/10/funny-cat-memes-go-hard-cover_675.jpg",
+      "img": "/fractal.png",
       "source": "https://github.com/matregnago",
       "stack": [
         { "name": "React", "color": "#61DAFB" },
@@ -46,7 +46,7 @@
       "name": "WirePenguin",
       "summary": "teste de benchmark",
       "description": "documentacao documentacao documentacao documentacao documentacao documentacao documentacao documentacao",
-      "img": "https://static.boredpanda.com/blog/wp-content/uploads/2025/10/funny-cat-memes-go-hard-cover_675.jpg",
+      "img": "/wirepenguin.png",
       "source": "https://github.com/matregnago",
       "stack": [
         { "name": "React", "color": "#61DAFB" },
@@ -67,7 +67,7 @@
       "name": "vLLM Parallelism Benchmark",
       "summary": "teste de benchmark",
       "description": "documentacao documentacao documentacao documentacao documentacao documentacao documentacao documentacao",
-      "img": "https://static.boredpanda.com/blog/wp-content/uploads/2025/10/funny-cat-memes-go-hard-cover_675.jpg",
+      "img": "/vllm.png",
       "source": "https://github.com/matregnago",
       "stack": [
         { "name": "React", "color": "#61DAFB" },
@@ -88,7 +88,7 @@
       "name": "Asteroid Way",
       "summary": "teste de benchmark",
       "description": "documentacao documentacao documentacao documentacao documentacao documentacao documentacao documentacao",
-      "img": "https://static.boredpanda.com/blog/wp-content/uploads/2025/10/funny-cat-memes-go-hard-cover_675.jpg",
+      "img": "/asteroid.png",
       "source": "https://github.com/matregnago",
       "stack": [
         { "name": "React", "color": "#61DAFB" },
