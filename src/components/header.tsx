@@ -19,13 +19,13 @@ export const Header = () => {
         <div className="flex flex-col">
           <div className="flex gap-1">
             <p>github:</p>
-            <a className="hover:underline" href="https://github.com/matregnago">
+            <a className="hover:underline underline-offset-4 transition-colors" href="https://github.com/matregnago">
               <strong>@matregnago</strong>
             </a>
           </div>
           <div className="flex gap-1">
             <p>email:</p>
-            <a className="hover:underline" href="mailto:me@matregnago.com">
+            <a className="hover:underline underline-offset-4 transition-colors" href="mailto:me@matregnago.com">
               <strong>me [at] matregnago (dot) com</strong>
             </a>
           </div>

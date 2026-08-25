@@ -5,6 +5,7 @@ import { EducationEntry } from "./education"
 import {
   BriefcaseBusiness,
   Download,
+  FlaskConical,
   FolderOpen,
   GraduationCap,
   PencilLine,
@@ -13,17 +14,20 @@ import { CustomTabsTrigger as TabsTrigger } from "./tab-trigger"
 import projectsData from "../../data/projects.json"
 import experienceData from "../../data/experience.json"
 import educationData from "../../data/education.json"
-import type { Education, Experience, Project } from "@/lib/types"
+import researchData from "../../data/research.json"
+import type { Education, Experience, Project, Research } from "@/lib/types"
+import { ResearchEntry } from "./research"
 
 export const MainTabs = () => {
   const { projects } = projectsData as { projects: Project[] }
   const { experience } = experienceData as { experience: Experience[] }
   const { education } = educationData as { education: Education[] }
+  const { research } = researchData as { research: Research[] }
 
   return (
     <section>
       <Tabs defaultValue="projects">
-        <div  className="flex flex-row justify-between">
+        <div className="flex flex-row justify-between">
         <TabsList variant="line">
           <TabsTrigger value="projects" label="Projects" icon={FolderOpen} />
           <TabsTrigger
@@ -35,8 +39,13 @@ export const MainTabs = () => {
             value="education"
             label="Education"
             icon={GraduationCap}
-          />
-          <TabsTrigger value="blog" label="Blog" icon={PencilLine} />
+            />
+            <TabsTrigger
+              value="research"
+              label="Research"
+              icon={FlaskConical}
+            />
+          {/*<TabsTrigger value="blog" label="Blog" icon={PencilLine} />*/}
           </TabsList>
           <a
             href="/CV_Matheus_Tregnago.pdf"
@@ -47,13 +56,13 @@ export const MainTabs = () => {
             <p className="text-xs">Download CV</p>
           </a>
         </div>
-        <TabsContent className="grid grid-cols-2 gap-4 py-3" value="projects">
+        <TabsContent className="grid grid-cols-2 gap-4 pt-3" value="projects">
           {projects.map((project, idx) => (
             <ProjectEntry project={project} key={idx} />
           ))}
         </TabsContent>
 
-        <TabsContent className="py-3" value="experience">
+        <TabsContent className="pt-3" value="experience">
           {experience.map((exp, idx) => (
             <ExperienceEntry
               experience={exp}
@@ -63,11 +72,19 @@ export const MainTabs = () => {
           ))}
         </TabsContent>
 
-        <TabsContent value="education" className="flex flex-col gap-3 py-3">
+        <TabsContent value="education" className="flex flex-col gap-3 pt-3">
           {education.map((ed, idx) => (
             <EducationEntry education={ed} key={idx} />
           ))}
         </TabsContent>
+
+
+        <TabsContent value="research" className="flex flex-col gap-3 pt-3">
+          {research.map((rs, idx) => (
+            <ResearchEntry research={rs} key={idx} />
+          ))}
+        </TabsContent>
+
 
         <TabsContent value="blog">
           <div className="flex h-64 flex-col items-center justify-center gap-2">

@@ -1,0 +1,38 @@
+{
+  "research": [
+    {
+      "title": "Accelerating Diffusion-Limited Aggregation with CUDA",
+      "authors": [
+        {
+          "name": "Matheus Tregnago",
+          "link": "https://github.com/matregnago"
+        },
+        {
+          "name": "John Doe",
+          "link": "https://example.com/john-doe"
+        }
+      ],
+      "event": "XXVII Symposium on High Performance Computing Systems",
+      "pdf": "/papers/dla-cuda.pdf",
+      "image": "/icon.jpg",
+      "abs": "We present a GPU-accelerated implementation of Diffusion-Limited Aggregation using CUDA, exploring parallelization strategies and memory optimizations to improve simulation performance."
+    },
+    {
+      "title": "Evaluating Distributed HPC Workloads Across Cloud and Local Clusters",
+      "authors": [
+        {
+          "name": "Matheus Tregnago",
+          "link": "https://github.com/matregnago"
+        },
+        {
+          "name": "Jane Doe",
+          "link": "https://example.com/jane-doe"
+        }
+      ],
+      "event": "International Conference on High Performance Computing",
+      "pdf": "/papers/distributed-hpc.pdf",
+      "image": "/vllm.png",
+      "abs": "This work investigates the impact of network latency and bandwidth on distributed HPC workloads combining local computing clusters with geographically distributed cloud resources."
+    }
+  ]
+}

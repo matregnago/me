@@ -20,7 +20,7 @@ export function ProjectEntry({ project }: ProjectEntryProps) {
         <CardDescription>{project.summary}</CardDescription>
       </CardHeader>
       <CardContent className="space-y-3">
-        <img className="h-70 w-full" src={project.img} />
+        <img className="h-70 w-full shrink-0 rounded-md object-cover" src={project.img} />
         <p className="text-justify">{project.description}</p>
 
         {project.stack && (

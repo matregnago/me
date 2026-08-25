@@ -28,3 +28,12 @@ export type Education = {
   endDate: string
   description: string
 }
+
+export type Research = {
+  title: string
+  authors: Array<{ name: string; link: string }>
+  event: string
+  pdf: string
+  image: string
+  abs: string
+}
