@@ -1,0 +1,52 @@
+{
+  "experience": [
+    {
+      "role": "Software Engineer",
+      "company": "Monsta Tecnologia",
+      "type": "Full-time",
+      "description": "test teste",
+      "location": "Bento Gonçalves, Brazil",
+      "startDate": "Abr 2025",
+      "endDate": "Present",
+      "responsibilities": ["resp1", "resp2"],
+      "stack": [
+        { "name": "React", "color": "#61DAFB" },
+        { "name": "TypeScript", "color": "#3178C6" },
+        { "name": "Vite", "color": "#9c36d7" },
+        { "name": "Tailwind CSS", "color": "#06b6d4" },
+        { "name": "Hono", "color": "#E36002" },
+        { "name": "Node.js", "color": "#84bf08" },
+        { "name": "MongoDB", "color": "#08ee69" },
+        { "name": "RabbitMQ", "color": "#FF6600" },
+        { "name": "Python", "color": "#3776AB" },
+        { "name": "Ollama", "color": "#080808" },
+        { "name": "Docker", "color": "#2496ED" },
+        { "name": "Jenkins", "color": "#d13e38" }
+      ]
+    },
+    {
+      "role": "Technical Support Analyst",
+      "company": "Monsta Tecnologia",
+      "type": "Part-time",
+      "description": "test teste",
+      "location": "Bento Gonçalves, Brazil",
+      "startDate": "Abr 2025",
+      "endDate": "Present",
+      "responsibilities": ["resp1", "resp2"],
+      "stack": [
+        { "name": "React", "color": "#61DAFB" },
+        { "name": "TypeScript", "color": "#3178C6" },
+        { "name": "Vite", "color": "#9c36d7" },
+        { "name": "Tailwind CSS", "color": "#06b6d4" },
+        { "name": "Hono", "color": "#E36002" },
+        { "name": "Node.js", "color": "#84bf08" },
+        { "name": "MongoDB", "color": "#08ee69" },
+        { "name": "RabbitMQ", "color": "#FF6600" },
+        { "name": "Python", "color": "#3776AB" },
+        { "name": "Ollama", "color": "#080808" },
+        { "name": "Docker", "color": "#2496ED" },
+        { "name": "Jenkins", "color": "#d13e38" }
+      ]
+    }
+  ]
+}

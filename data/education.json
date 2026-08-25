@@ -1,0 +1,22 @@
+{
+  "education": [
+    {
+      "degree": "Masters's Degree",
+      "field": "Computer Science",
+      "school": "UFRGS",
+      "description": "Advisor: Schnorr",
+      "startDate": "mar 2026",
+      "endDate": "mar 2028",
+      "status": "in-progress"
+    },
+    {
+      "degree": "Bachelor's Degree",
+      "field": "Computer Science",
+      "school": "UCS",
+      "description": "3.6/4 GPA",
+      "startDate": "mar 2022",
+      "endDate": "dec 2025",
+      "status": "completed"
+    }
+  ]
+}
