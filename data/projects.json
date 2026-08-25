@@ -7,20 +7,7 @@
       "img": "/lantify.png",
       "source": "https://github.com/matregnago",
       "website": "https://lantify.vercel.app/",
-      "stack": [
-        { "name": "React", "color": "#61DAFB" },
-        { "name": "TypeScript", "color": "#3178C6" },
-        { "name": "Vite", "color": "#9c36d7" },
-        { "name": "Tailwind CSS", "color": "#06b6d4" },
-        { "name": "Hono", "color": "#E36002" },
-        { "name": "Node.js", "color": "#84bf08" },
-        { "name": "MongoDB", "color": "#08ee69" },
-        { "name": "RabbitMQ", "color": "#FF6600" },
-        { "name": "Python", "color": "#3776AB" },
-        { "name": "Ollama", "color": "#080808" },
-        { "name": "Docker", "color": "#2496ED" },
-        { "name": "Jenkins", "color": "#d13e38" }
-      ]
+      "stack": ["rabbitmq", "ollama"]
     },
     {
       "name": "DLA Fractal CUDA",
@@ -28,20 +15,7 @@
       "description": "documentacao documentacao documentacao documentacao documentacao documentacao documentacao documentacao",
       "img": "/dla.png",
       "source": "https://github.com/matregnago",
-      "stack": [
-        { "name": "React", "color": "#61DAFB" },
-        { "name": "TypeScript", "color": "#3178C6" },
-        { "name": "Vite", "color": "#9c36d7" },
-        { "name": "Tailwind CSS", "color": "#06b6d4" },
-        { "name": "Hono", "color": "#E36002" },
-        { "name": "Node.js", "color": "#84bf08" },
-        { "name": "MongoDB", "color": "#08ee69" },
-        { "name": "RabbitMQ", "color": "#FF6600" },
-        { "name": "Python", "color": "#3776AB" },
-        { "name": "Ollama", "color": "#080808" },
-        { "name": "Docker", "color": "#2496ED" },
-        { "name": "Jenkins", "color": "#d13e38" }
-      ]
+      "stack": ["rabbitmq", "ollama"]
     },
     {
       "name": "WirePenguin",
@@ -49,20 +23,7 @@
       "description": "documentacao documentacao documentacao documentacao documentacao documentacao documentacao documentacao",
       "img": "/wirepenguin.png",
       "source": "https://github.com/matregnago",
-      "stack": [
-        { "name": "React", "color": "#61DAFB" },
-        { "name": "TypeScript", "color": "#3178C6" },
-        { "name": "Vite", "color": "#9c36d7" },
-        { "name": "Tailwind CSS", "color": "#06b6d4" },
-        { "name": "Hono", "color": "#E36002" },
-        { "name": "Node.js", "color": "#84bf08" },
-        { "name": "MongoDB", "color": "#08ee69" },
-        { "name": "RabbitMQ", "color": "#FF6600" },
-        { "name": "Python", "color": "#3776AB" },
-        { "name": "Ollama", "color": "#080808" },
-        { "name": "Docker", "color": "#2496ED" },
-        { "name": "Jenkins", "color": "#d13e38" }
-      ]
+      "stack": ["rabbitmq", "ollama"]
     },
     {
       "name": "vLLM Parallelism Benchmark",
@@ -70,20 +31,7 @@
       "description": "documentacao documentacao documentacao documentacao documentacao documentacao documentacao documentacao",
       "img": "/vllm.png",
       "source": "https://github.com/matregnago",
-      "stack": [
-        { "name": "React", "color": "#61DAFB" },
-        { "name": "TypeScript", "color": "#3178C6" },
-        { "name": "Vite", "color": "#9c36d7" },
-        { "name": "Tailwind CSS", "color": "#06b6d4" },
-        { "name": "Hono", "color": "#E36002" },
-        { "name": "Node.js", "color": "#84bf08" },
-        { "name": "MongoDB", "color": "#08ee69" },
-        { "name": "RabbitMQ", "color": "#FF6600" },
-        { "name": "Python", "color": "#3776AB" },
-        { "name": "Ollama", "color": "#080808" },
-        { "name": "Docker", "color": "#2496ED" },
-        { "name": "Jenkins", "color": "#d13e38" }
-      ]
+      "stack": ["rabbitmq", "ollama"]
     },
     {
       "name": "Asteroid Way",
@@ -91,20 +39,7 @@
       "description": "documentacao documentacao documentacao documentacao documentacao documentacao documentacao documentacao",
       "img": "/asteroid.png",
       "source": "https://github.com/matregnago",
-      "stack": [
-        { "name": "React", "color": "#61DAFB" },
-        { "name": "TypeScript", "color": "#3178C6" },
-        { "name": "Vite", "color": "#9c36d7" },
-        { "name": "Tailwind CSS", "color": "#06b6d4" },
-        { "name": "Hono", "color": "#E36002" },
-        { "name": "Node.js", "color": "#84bf08" },
-        { "name": "MongoDB", "color": "#08ee69" },
-        { "name": "RabbitMQ", "color": "#FF6600" },
-        { "name": "Python", "color": "#3776AB" },
-        { "name": "Ollama", "color": "#080808" },
-        { "name": "Docker", "color": "#2496ED" },
-        { "name": "Jenkins", "color": "#d13e38" }
-      ]
+      "stack": ["rabbitmq", "ollama"]
     }
   ]
 }

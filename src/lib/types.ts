@@ -5,7 +5,7 @@ export type Project = {
   description: string
   source: string
   website: string | null;
-  stack?: Array<{ name: string; color: string }>
+  stack?: string[]
 }
 
 export type Experience = {
@@ -17,7 +17,7 @@ export type Experience = {
   endDate: string
   description: string
   responsibilities: string[]
-  stack?: Array<{ name: string; color: string }>
+  stack?: string[]
 }
 
 export type Education = {
@@ -38,4 +38,5 @@ export type Research = {
   pdf: string
   image: string
   abs: string
+  stack?: string[]
 }
