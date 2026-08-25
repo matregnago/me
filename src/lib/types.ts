@@ -1,4 +1,4 @@
-export type Status = "active" | "complete" | "in-progress"
+export type Status = "active" | "completed" | "in-progress"
 
 export type Project = {
   name: string

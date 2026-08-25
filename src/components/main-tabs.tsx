@@ -1,9 +1,10 @@
 import type { Education, Experience, Project } from "@/lib/types"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs"
+import { Tabs, TabsContent, TabsList } from "./ui/tabs"
 import { ExperienceEntry } from "./experience"
 import { ProjectEntry } from "./project"
 import { EducationEntry } from "./education"
-import { FolderOpen, PencilLine } from "lucide-react"
+import { BriefcaseBusiness, FolderOpen, GraduationCap, PencilLine } from "lucide-react"
+import { CustomTabsTrigger as TabsTrigger } from "./tab-trigger"
 
 export const MainTabs = () => {
   const experiences: Experience[] = [
@@ -62,7 +63,7 @@ export const MainTabs = () => {
       summary: "teste de benchmark",
       description:
         "documentacao documentacao documentacao documentacao documentacao documentacao documentacao documentacao",
-      status: "complete",
+      status: "completed",
       img: "https://static.boredpanda.com/blog/wp-content/uploads/2025/10/funny-cat-memes-go-hard-cover_675.jpg",
       source: "https://github.com/matregnago",
     },
@@ -71,7 +72,7 @@ export const MainTabs = () => {
       summary: "teste de benchmark",
       description:
         "documentacao documentacao documentacao documentacao documentacao documentacao documentacao documentacao",
-      status: "complete",
+      status: "completed",
       img: "https://static.boredpanda.com/blog/wp-content/uploads/2025/10/funny-cat-memes-go-hard-cover_675.jpg",
       source: "https://github.com/matregnago",
     },
@@ -79,7 +80,7 @@ export const MainTabs = () => {
 
   const educations: Education[] = [
     {
-      degree: "Masters",
+      degree: "Masters's Degree",
       field: "Computer Science",
       school: "UFRGS",
       description: "Advisor: Schnorr",
@@ -88,42 +89,31 @@ export const MainTabs = () => {
       status: "in-progress"
     },
     {
-      degree: "Bachelor",
+      degree: "Bachelor's Degree",
       field: "Computer Science",
       school: "UCS",
       description: "3.6/4 GPA",
       startDate: "mar 2022",
       endDate: "dec 2025",
-      status: "complete"
+      status: "completed"
     }
   ]
   return (
     <section>
       <Tabs defaultValue="projects">
         <TabsList variant="line">
-          <TabsTrigger value="projects">
-            <div className="flex flex-row gap-1.5 items-center">
-              <FolderOpen className="size-4" />
-              <p>Projects</p>
-          </div>
-
-          </TabsTrigger>
-          <TabsTrigger value="experience">
-            <div className="flex flex-row gap-1.5 items-center">
-              <FolderOpen className="size-4" />
-              <p>Experience</p>
-          </div>
-          </TabsTrigger>
-          <TabsTrigger value="education">Education</TabsTrigger>
-          <TabsTrigger value="blog">Blog</TabsTrigger>
+          <TabsTrigger value="projects" label="Projects" icon={FolderOpen}  />
+          <TabsTrigger value="experience" label="Experience" icon={BriefcaseBusiness} />
+          <TabsTrigger value="education" label="Education" icon={GraduationCap} />
+          <TabsTrigger value="blog" label="Blog" icon={PencilLine} />
         </TabsList>
-        <TabsContent className="py-2" value="projects">
+        <TabsContent className="py-3 grid grid-cols-2 gap-4" value="projects">
           {projects.map((project, idx) => (
             <ProjectEntry project={project} key={idx} />
           ))}
         </TabsContent>
 
-        <TabsContent className="py-2" value="experience">
+        <TabsContent className="py-3" value="experience">
           {experiences.map((exp, idx) => (
             <ExperienceEntry
               experience={exp}
@@ -133,7 +123,7 @@ export const MainTabs = () => {
           ))}
         </TabsContent>
 
-        <TabsContent value="education">
+        <TabsContent value="education" className="flex flex-col gap-3 py-3">
           {educations.map((education, idx) => (
             <EducationEntry education={education} key={idx} />
           ))}

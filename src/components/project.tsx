@@ -3,31 +3,31 @@ import {
   CardAction,
   CardContent,
   CardDescription,
-  CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
 import { Button } from "./ui/button"
 import type { Project } from "@/lib/types"
+import { StatusBadge } from "./status-badge"
 
 interface ProjectEntryProps {
   project: Project
 }
 export function ProjectEntry({ project }: ProjectEntryProps) {
   return (
-    <Card>
+    <Card className="bg-transparent">
       <CardHeader>
         <CardTitle>{project.name}</CardTitle>
         <CardDescription>{project.summary}</CardDescription>
-        <CardAction>{project.status}</CardAction>
+        <CardAction>
+          <StatusBadge status={project.status} />
+        </CardAction>
       </CardHeader>
       <CardContent>
         <img src={project.img} />
-        <p>{project.description}</p>
-      </CardContent>
-      <CardFooter>
+        <p className="text-justify my-3">{project.description}</p>
         <Button>Source code</Button>
-      </CardFooter>
+      </CardContent>
     </Card>
   )
 }
