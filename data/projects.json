@@ -1,7 +1,15 @@
 {
   "projects": [
     {
-      "name": "vLLM Benchmark aaaa",
+      "name": "Lantify",
+      "summary": "teste de benchmark",
+      "description": "documentacao documentacao documentacao documentacao documentacao documentacao documentacao documentacao",
+      "status": "active",
+      "img": "https://static.boredpanda.com/blog/wp-content/uploads/2025/10/funny-cat-memes-go-hard-cover_675.jpg",
+      "source": "https://github.com/matregnago"
+    },
+    {
+      "name": "DLA Fractal CUDA",
       "summary": "teste de benchmark",
       "description": "documentacao documentacao documentacao documentacao documentacao documentacao documentacao documentacao",
       "status": "completed",
@@ -9,7 +17,23 @@
       "source": "https://github.com/matregnago"
     },
     {
-      "name": "vLLM Benchmark aaaa",
+      "name": "WirePenguin",
+      "summary": "teste de benchmark",
+      "description": "documentacao documentacao documentacao documentacao documentacao documentacao documentacao documentacao",
+      "status": "completed",
+      "img": "https://static.boredpanda.com/blog/wp-content/uploads/2025/10/funny-cat-memes-go-hard-cover_675.jpg",
+      "source": "https://github.com/matregnago"
+    },
+    {
+      "name": "vLLM Parallelism Benchmark",
+      "summary": "teste de benchmark",
+      "description": "documentacao documentacao documentacao documentacao documentacao documentacao documentacao documentacao",
+      "status": "completed",
+      "img": "https://static.boredpanda.com/blog/wp-content/uploads/2025/10/funny-cat-memes-go-hard-cover_675.jpg",
+      "source": "https://github.com/matregnago"
+    },
+    {
+      "name": "Asteroid Way",
       "summary": "teste de benchmark",
       "description": "documentacao documentacao documentacao documentacao documentacao documentacao documentacao documentacao",
       "status": "completed",
