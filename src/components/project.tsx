@@ -16,7 +16,7 @@ export function ProjectEntry({ project }: ProjectEntryProps) {
   return (
     <Card className="bg-transparent">
       <CardHeader>
-        <CardTitle>{project.name}</CardTitle>
+        <CardTitle className="text-foreground">{project.name}</CardTitle>
         <CardDescription>{project.summary}</CardDescription>
       </CardHeader>
       <CardContent className="space-y-3">

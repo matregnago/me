@@ -13,7 +13,7 @@ interface EducationEntryProps {
 }
 
 const getEducationIcon = (degree: string) => {
-  const className = "size-12 rounded-xl border p-2.5 bg-card"
+  const className = "size-12 rounded-xl border p-2.5 bg-card text-foreground"
   if (degree.toLowerCase().includes("master"))
     return <BookOpenText className={className} />
   if (degree.toLowerCase().includes("bachelor"))
@@ -29,7 +29,7 @@ export const EducationEntry = ({ education }: EducationEntryProps) => {
           <div className="flex flex-row gap-3">
             {getEducationIcon(education.degree)}
             <div>
-              <h1 className="text-base">
+              <h1 className="text-base font-heading text-foreground font-medium">
                 {education.degree} in {education.field}
               </h1>
               <div className="mt-1 flex flex-wrap items-center gap-x-3 gap-y-1 text-sm text-muted-foreground">

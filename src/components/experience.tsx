@@ -35,7 +35,7 @@ export function ExperienceEntry({ experience, isLast }: ExperienceEntryProps) {
                         <span className="rounded-full bg-muted px-2 py-0.5 text-xs text-muted-foreground transition-colors">
                             {experience.type}
                         </span>
-                        <span className="text-xs text-muted-foreground/70">
+                        <span className="text-xs text-muted-foreground">
                             {experience.startDate} — {experience.endDate}
                         </span>
                     </div>

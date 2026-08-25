@@ -14,7 +14,6 @@ import projectsData from "../../data/projects.json"
 import experienceData from "../../data/experience.json"
 import educationData from "../../data/education.json"
 import type { Education, Experience, Project } from "@/lib/types"
-import { buttonVariants } from "./ui/button"
 
 export const MainTabs = () => {
   const { projects } = projectsData as { projects: Project[] }
@@ -42,10 +41,10 @@ export const MainTabs = () => {
           <a
             href="/CV_Matheus_Tregnago.pdf"
             target="_blank"
-            className={buttonVariants({ variant:"outline",  size: "sm" }) + " w-28"}
+            className={"w-28 download-button flex flex-row gap-1 items-center"}
           >
             <Download className="size-3" />
-            Download CV
+            <p className="text-xs">Download CV</p>
           </a>
         </div>
         <TabsContent className="grid grid-cols-2 gap-4 py-3" value="projects">
@@ -72,7 +71,7 @@ export const MainTabs = () => {
 
         <TabsContent value="blog">
           <div className="flex h-64 flex-col items-center justify-center gap-2">
-            <PencilLine className="size-14 rounded-lg border bg-card p-2" />
+            <PencilLine className="size-14 rounded-lg border bg-card p-3" />
             <p className="text-base">Nothing to see here.</p>
           </div>
         </TabsContent>
