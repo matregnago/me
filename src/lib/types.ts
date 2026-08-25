@@ -4,6 +4,7 @@ export type Project = {
   summary: string
   description: string
   source: string
+  website: string | null;
   stack?: Array<{ name: string; color: string }>
 }
 

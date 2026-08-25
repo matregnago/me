@@ -14,7 +14,7 @@ import projectsData from "../../data/projects.json"
 import experienceData from "../../data/experience.json"
 import educationData from "../../data/education.json"
 import type { Education, Experience, Project } from "@/lib/types"
-import { Button } from "./ui/button"
+import { buttonVariants } from "./ui/button"
 
 export const MainTabs = () => {
   const { projects } = projectsData as { projects: Project[] }
@@ -39,13 +39,14 @@ export const MainTabs = () => {
           />
           <TabsTrigger value="blog" label="Blog" icon={PencilLine} />
           </TabsList>
-          <Button variant={"outline"} size={"sm"} className="w-28">
-            <div className="flex flex-row gap-1.5 items-center">
+          <a
+            href="/CV_Matheus_Tregnago.pdf"
+            target="_blank"
+            className={buttonVariants({ variant:"outline",  size: "sm" }) + " w-28"}
+          >
             <Download className="size-3" />
             Download CV
-
-            </div>
-          </Button>
+          </a>
         </div>
         <TabsContent className="grid grid-cols-2 gap-4 py-3" value="projects">
           {projects.map((project, idx) => (

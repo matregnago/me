@@ -6,6 +6,7 @@
       "description": "documentacao documentacao documentacao documentacao documentacao documentacao documentacao documentacao",
       "img": "/lantify.png",
       "source": "https://github.com/matregnago",
+      "website": "https://lantify.vercel.app/",
       "stack": [
         { "name": "React", "color": "#61DAFB" },
         { "name": "TypeScript", "color": "#3178C6" },

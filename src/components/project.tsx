@@ -5,8 +5,9 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
-import { Button } from "./ui/button"
+import { buttonVariants } from "./ui/button"
 import type { Project } from "@/lib/types"
+import { Code, ExternalLink } from "lucide-react"
 
 interface ProjectEntryProps {
   project: Project
@@ -19,24 +20,46 @@ export function ProjectEntry({ project }: ProjectEntryProps) {
         <CardDescription>{project.summary}</CardDescription>
       </CardHeader>
       <CardContent className="space-y-3">
-        <img className="w-full h-70" src={project.img} />
+        <img className="h-70 w-full" src={project.img} />
         <p className="text-justify">{project.description}</p>
 
         {project.stack && (
-            <div className="flex flex-wrap gap-1.5">
-                {project.stack.map((tech) => (
-                    <div
-                        key={tech.name}
-                        className="flex items-center gap-1 rounded-full border border-border bg-muted/50 px-2 py-0.5"
-                    >
-                        <span className="size-1.5 rounded-full" style={{ backgroundColor: tech.color }} />
-                        <span className="text-xs">{tech.name}</span>
-                    </div>
-                ))}
-            </div>
+          <div className="flex flex-wrap gap-1.5">
+            {project.stack.map((tech) => (
+              <div
+                key={tech.name}
+                className="flex items-center gap-1 rounded-full border border-border bg-muted/50 px-2 py-0.5"
+              >
+                <span
+                  className="size-1.5 rounded-full"
+                  style={{ backgroundColor: tech.color }}
+                />
+                <span className="text-xs">{tech.name}</span>
+              </div>
+            ))}
+          </div>
         )}
+        <div className="flex gap-2">
+          <a
+            href={project.source}
+            target="_blank"
+            className={buttonVariants({ size: "sm" })}
+          >
+            <Code />
+            Source code
+          </a>
 
-        <Button>Source code</Button>
+          {project.website && (
+            <a
+              href={project.website}
+              target="_blank"
+              className={buttonVariants({ size: "sm" })}
+            >
+              <ExternalLink />
+              Website
+            </a>
+          )}
+        </div>
       </CardContent>
     </Card>
   )
