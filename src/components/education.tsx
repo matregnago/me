@@ -42,7 +42,7 @@ export const EducationEntry = ({ education }: EducationEntryProps) => {
                   {education.startDate} — {education.endDate}
                 </span>
               </div>
-              <p className="mt-3">{education.description}</p>
+              <p className="mt-3 whitespace-pre-line">{education.description}</p>
             </div>
           </div>
         </div>

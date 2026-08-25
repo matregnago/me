@@ -31,6 +31,8 @@ export type Education = {
 
 export type Research = {
   title: string
+  year: number
+  lang: string;
   authors: Array<{ name: string; link: string }>
   event: string
   pdf: string

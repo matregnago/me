@@ -1,12 +1,15 @@
 import { Card, CardContent } from "@/components/ui/card"
 import type { Research } from "@/lib/types"
-import { ExternalLink, FileText } from "lucide-react"
+import { ExternalLink, FileText, Summary } from "lucide-react"
+import { Button } from "./ui/button"
+import { useState } from "react"
 
 interface ResearchEntryProps {
   research: Research
 }
 
 export const ResearchEntry = ({ research }: ResearchEntryProps) => {
+  const [isAbsOpen, setIsAbsOpen] = useState(false)
   return (
     <Card className="bg-transparent">
       <CardContent>
@@ -38,24 +41,30 @@ export const ResearchEntry = ({ research }: ResearchEntryProps) => {
               ))}
             </div>
 
-            <p className="mt-1 text-sm italic text-muted-foreground">
-              {research.event}, 2026
+            <p className="mt-1 text-sm text-muted-foreground italic">
+              {research.event}, {research.year}
             </p>
 
-            <div className="mt-3">
+            <div className="mt-3 flex items-center gap-2">
+              <Button variant="outline" size="sm" className="inline-flex" onClick={() => setIsAbsOpen(!isAbsOpen)}>
+                <Summary className="size-4" />
+                ABS
+              </Button>
+
               <a
                 href={research.pdf}
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center gap-1.5 text-sm font-medium hover:underline"
+                className={"inline-flex items-center gap-1.5 text-sm hover:text-foreground hover:underline"}
               >
                 <FileText className="size-4" />
-                PDF
+                PDF({research.lang})
                 <ExternalLink className="size-3" />
               </a>
             </div>
           </div>
         </div>
+        {isAbsOpen && <p className="leading-relaxed mt-5 text-sm text-justify">{research.abs}</p>}
       </CardContent>
     </Card>
   )

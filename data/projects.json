@@ -26,7 +26,7 @@
       "name": "DLA Fractal CUDA",
       "summary": "teste de benchmark",
       "description": "documentacao documentacao documentacao documentacao documentacao documentacao documentacao documentacao",
-      "img": "/fractal.png",
+      "img": "/dla.png",
       "source": "https://github.com/matregnago",
       "stack": [
         { "name": "React", "color": "#61DAFB" },

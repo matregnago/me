@@ -1,38 +1,50 @@
 {
   "research": [
     {
-      "title": "Accelerating Diffusion-Limited Aggregation with CUDA",
+      "title": "Parallel GPU Implementation for Coral Fractal Generation",
       "authors": [
         {
           "name": "Matheus Tregnago",
           "link": "https://github.com/matregnago"
         },
         {
-          "name": "John Doe",
-          "link": "https://example.com/john-doe"
+          "name": "André Luis Martinotto",
+          "link": "http://lattes.cnpq.br/0695249700868677"
+        },
+        {
+          "name": "Samuel Francisco Ferrigo",
+          "link": "http://lattes.cnpq.br/0533228733592354"
         }
       ],
-      "event": "XXVII Symposium on High Performance Computing Systems",
+      "event": "Escola Regional de Alto Desempenho da Região Sul (ERAD-RS)",
       "pdf": "/papers/dla-cuda.pdf",
-      "image": "/icon.jpg",
-      "abs": "We present a GPU-accelerated implementation of Diffusion-Limited Aggregation using CUDA, exploring parallelization strategies and memory optimizations to improve simulation performance."
+      "lang": "pt",
+      "image": "/eradrs2026.png",
+      "abs": "This paper describes a parallel GPU implementation for generating coral fractals using the Diffusion-Limited Aggregation (DLA) algorithm. The implementation was developed in C++ and parallelized using the CUDA platform. A speedup of up to 40x was achieved; however, the speedup was observed to plateau due to the maximum number of threads that can be active simultaneously on the GPU.",
+      "year": 2026
     },
     {
-      "title": "Evaluating Distributed HPC Workloads Across Cloud and Local Clusters",
+      "title": "Performance Gain Evaluation Using Parallelism on IoT Data from Smart Cities",
       "authors": [
         {
           "name": "Matheus Tregnago",
           "link": "https://github.com/matregnago"
         },
         {
-          "name": "Jane Doe",
-          "link": "https://example.com/jane-doe"
+          "name": "Ricardo Bregalda",
+          "link": "https://www.linkedin.com/in/ricardomeneguzzibregalda"
+        },
+        {
+          "name": "Samuel Francisco Ferrigo",
+          "link": "http://lattes.cnpq.br/0533228733592354"
         }
       ],
-      "event": "International Conference on High Performance Computing",
-      "pdf": "/papers/distributed-hpc.pdf",
-      "image": "/vllm.png",
-      "abs": "This work investigates the impact of network latency and bandwidth on distributed HPC workloads combining local computing clusters with geographically distributed cloud resources."
+      "event": "Escola Regional de Alto Desempenho da Região Sul (ERAD-RS)",
+      "pdf": "https://doi.org/10.5753/eradrs.2025.6527",
+      "lang": "pt",
+      "image": "/eradrs2025.png",
+      "abs": "This paper evaluates the use of different parallelism techniques for processing IoT data in smart cities. To this end, OpenMP, MPI, Multiprocessing, and Dask were used to identify sensor failures and assess performance gains, achieving a speedup of up to 5.16 with Dask. The results reinforce the advantages of using parallelism for processing large volumes of data.",
+      "year": 2025
     }
   ]
 }
