@@ -49,7 +49,7 @@ export const MainTabs = () => {
           </TabsList>
           </div>
           <a
-            href="/CV_Matheus_Tregnago.pdf"
+            href="/CV_Matheus_Tregnago_en.pdf"
             target="_blank"
             className={"-order-1 sm:order-1 w-28 download-button flex flex-row gap-1 items-center"}
           >
