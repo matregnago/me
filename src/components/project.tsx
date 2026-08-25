@@ -25,7 +25,7 @@ export function ProjectEntry({ project }: ProjectEntryProps) {
           className="h-70 w-full shrink-0 rounded-md object-cover"
           src={project.img}
         />
-        <p className="text-justify">{project.description}</p>
+        <p>{project.description}</p>
 
         {project.stack && (
           <div className="flex flex-wrap gap-1.5">

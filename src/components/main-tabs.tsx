@@ -46,7 +46,6 @@ export const MainTabs = () => {
               label="Research"
               icon={FlaskConical}
             />
-          {/*<TabsTrigger value="blog" label="Blog" icon={PencilLine} />*/}
           </TabsList>
           </div>
           <a
