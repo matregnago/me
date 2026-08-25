@@ -358,7 +358,6 @@
 
     .download-button {
         max-height: 28px;
-        margin-left: 8px;
         background: var(--download-btn-bg);
         color: var(--download-btn-color);
         padding: 4px 8px;

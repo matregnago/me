@@ -27,7 +27,8 @@ export const MainTabs = () => {
   return (
     <section>
       <Tabs defaultValue="projects">
-        <div className="flex flex-row justify-between">
+        <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-3 sm:gap-0 mt-1 sm:mt-0">
+          <div className="overflow-x-scroll overflow-y-hidden">
         <TabsList variant="line">
           <TabsTrigger value="projects" label="Projects" icon={FolderOpen} />
           <TabsTrigger
@@ -47,16 +48,17 @@ export const MainTabs = () => {
             />
           {/*<TabsTrigger value="blog" label="Blog" icon={PencilLine} />*/}
           </TabsList>
+          </div>
           <a
             href="/CV_Matheus_Tregnago.pdf"
             target="_blank"
-            className={"w-28 download-button flex flex-row gap-1 items-center"}
+            className={"-order-1 sm:order-1 w-28 download-button flex flex-row gap-1 items-center"}
           >
             <Download className="size-3" />
             <p className="text-xs">Download CV</p>
           </a>
         </div>
-        <TabsContent className="grid grid-cols-2 gap-4 pt-3" value="projects">
+        <TabsContent className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-3" value="projects">
           {projects.map((project, idx) => (
             <ProjectEntry project={project} key={idx} />
           ))}
