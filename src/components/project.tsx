@@ -1,6 +1,5 @@
 import {
   Card,
-  CardAction,
   CardContent,
   CardDescription,
   CardHeader,
@@ -8,7 +7,6 @@ import {
 } from "@/components/ui/card"
 import { Button } from "./ui/button"
 import type { Project } from "@/lib/types"
-import { StatusBadge } from "./status-badge"
 
 interface ProjectEntryProps {
   project: Project
@@ -19,9 +17,6 @@ export function ProjectEntry({ project }: ProjectEntryProps) {
       <CardHeader>
         <CardTitle>{project.name}</CardTitle>
         <CardDescription>{project.summary}</CardDescription>
-        <CardAction>
-          <StatusBadge status={project.status} />
-        </CardAction>
       </CardHeader>
       <CardContent className="space-y-3">
         <img src={project.img} />

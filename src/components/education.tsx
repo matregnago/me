@@ -1,6 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card"
 import type { Education } from "@/lib/types"
-import { StatusBadge } from "./status-badge"
 import {
   BookOpenText,
   Calendar,
@@ -46,7 +45,6 @@ export const EducationEntry = ({ education }: EducationEntryProps) => {
               <p className="mt-3">{education.description}</p>
             </div>
           </div>
-          <StatusBadge status={education.status} />
         </div>
       </CardContent>
     </Card>

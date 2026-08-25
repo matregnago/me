@@ -6,8 +6,7 @@
       "school": "UFRGS",
       "description": "Advisor: Schnorr",
       "startDate": "mar 2026",
-      "endDate": "mar 2028",
-      "status": "in-progress"
+      "endDate": "mar 2028"
     },
     {
       "degree": "Bachelor's Degree",
@@ -15,8 +14,7 @@
       "school": "UCS",
       "description": "3.6/4 GPA",
       "startDate": "mar 2022",
-      "endDate": "dec 2025",
-      "status": "completed"
+      "endDate": "dec 2025"
     }
   ]
 }
