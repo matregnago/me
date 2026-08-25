@@ -4,23 +4,53 @@
       "role": "Software Engineer",
       "company": "Monsta Tecnologia",
       "type": "Full-time",
-      "description": "test teste",
+      "description": "Develop and maintain production software across billing, customer lifecycle automation, monitoring and infrastructure management, working on both backend systems and user-facing applications.",
       "location": "Bento Gonçalves, Brazil",
-      "startDate": "Abr 2025",
+      "startDate": "Apr 2025",
       "endDate": "Present",
-      "responsibilities": ["resp1", "resp2"],
-      "stack": ["rabbitmq", "ollama"]
+      "responsibilities": [
+        "Redesigned and re-architected the company's online store and subscription flows, expanding support for recurring products and new products and services integrated with the Stripe API.",
+        "Reworked the checkout architecture and state machine while redesigning the store interface to support more complex billing and subscription scenarios.",
+        "Designed and implemented a customer lifecycle email automation system with configurable delivery rules based on subscription state, customer type, time until expiration and time spent in a given state, with customizable email templates managed through the administration panel.",
+        "Built an internal administration platform using Next.js and Express for managing an email hosting service, including domains, mailboxes, aliases, bulk account creation, storage quotas, account limits and permissions.",
+        "Developed a customizable interactive map representing the hierarchy of registered devices, supporting drag-and-drop positioning, monitoring widgets and configurable visual appearance."
+      ],
+      "stack": [
+        "rust",
+        "typescript",
+        "react",
+        "nextjs",
+        "express",
+        "stripe",
+        "postgresql",
+        "docker",
+        "aws",
+        "tailwind"
+      ]
     },
     {
       "role": "Technical Support Analyst",
       "company": "Monsta Tecnologia",
       "type": "Part-time",
-      "description": "test teste",
+      "description": "Provided specialized technical support for Linux-based production environments, including server administration, network troubleshooting, firewall configuration and monitoring automation.",
       "location": "Bento Gonçalves, Brazil",
-      "startDate": "Abr 2025",
-      "endDate": "Present",
-      "responsibilities": ["resp1", "resp2"],
-      "stack": ["rabbitmq", "ollama"]
+      "startDate": "Jul 2022",
+      "endDate": "Apr 2025",
+      "responsibilities": [
+        "Provided specialized remote support for Monsta software, including installation, configuration and maintenance on Linux servers.",
+        "Configured and maintained Linux server infrastructure, managing services, network ports and firewall rules.",
+        "Analyzed application and system logs to diagnose production issues, troubleshoot failures and resolve incidents.",
+        "Investigated network connectivity and traffic issues using tools such as tcpdump and netstat.",
+        "Developed and maintained Lua-based automation and monitoring scripts used to track customer services and system health."
+      ],
+      "stack": [
+        "linux",
+        "bash",
+        "lua",
+        "systemd",
+        "iptables",
+        "tcpdump"
+      ]
     }
   ]
 }

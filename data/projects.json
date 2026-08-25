@@ -3,7 +3,7 @@
     {
       "name": "Lantify",
       "summary": "Counter-Strike 2 statistics platform for LAN parties.",
-      "description": "A full-stack platform that processes Counter-Strike 2 match data and turns it into player rankings, statistics, match histories, and interactive visualizations for LAN parties.",
+      "description": "A full-stack platform that processes Counter-Strike 2 match data and turns it into player rankings, statistics, match histories, and interactive visualizations for my friend's LAN parties.",
       "img": "/lantify.png",
       "source": "https://github.com/matregnago/lantify",
       "website": "https://lantify.vercel.app/",

@@ -19,6 +19,20 @@ export const skills: Map<string, Skill> = new Map([
     },
   ],
   [
+    "react",
+    {
+      name: "React",
+      color: "#61DAFB",
+    },
+  ],
+  [
+    "express",
+    {
+      name: "Express",
+      color: "#000000",
+    },
+  ],
+  [
     "postgresql",
     {
       name: "PostgreSQL",
@@ -44,6 +58,27 @@ export const skills: Map<string, Skill> = new Map([
     {
       name: "Docker",
       color: "#2496ED",
+    },
+  ],
+  [
+    "stripe",
+    {
+      name: "Stripe",
+      color: "#635BFF",
+    },
+  ],
+  [
+    "aws",
+    {
+      name: "AWS",
+      color: "#FF9900",
+    },
+  ],
+  [
+    "tailwind",
+    {
+      name: "Tailwind CSS",
+      color: "#06B6D4",
     },
   ],
   [
@@ -142,6 +177,55 @@ export const skills: Map<string, Skill> = new Map([
     {
       name: "Ollama",
       color: "#080808",
+    },
+  ],
+  [
+    "linux",
+    {
+      name: "Linux",
+      color: "#FCC624",
+    },
+  ],
+  [
+    "bash",
+    {
+      name: "Bash",
+      color: "#4EAA25",
+    },
+  ],
+  [
+    "lua",
+    {
+      name: "Lua",
+      color: "#2C2D72",
+    },
+  ],
+  [
+    "ssh",
+    {
+      name: "SSH",
+      color: "#231F20",
+    },
+  ],
+  [
+    "systemd",
+    {
+      name: "systemd",
+      color: "#0085CA",
+    },
+  ],
+  [
+    "iptables",
+    {
+      name: "iptables",
+      color: "#D22128",
+    },
+  ],
+  [
+    "tcpdump",
+    {
+      name: "tcpdump",
+      color: "#6A5ACD",
     },
   ],
 ])
