@@ -13,8 +13,8 @@ export const CustomTabsTrigger = ({
   return (
     <TabsTrigger value={value}>
       <div className="flex flex-row items-center gap-1.5">
-        <Icon className="size-4" />
-        <p>{label}</p>
+        <Icon className="sm:size-4 size-5" />
+        <p className="hidden sm:block">{label}</p>
       </div>
     </TabsTrigger>
   )

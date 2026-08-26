@@ -28,25 +28,29 @@ export const MainTabs = () => {
     <section>
       <Tabs defaultValue="projects">
         <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-3 sm:gap-0 mt-1 sm:mt-0">
-          <div className="overflow-x-scroll overflow-y-hidden">
-        <TabsList variant="line">
-          <TabsTrigger value="projects" label="Projects" icon={FolderOpen} />
-          <TabsTrigger
-            value="experience"
-            label="Experience"
-            icon={BriefcaseBusiness}
-          />
-          <TabsTrigger
-            value="education"
-            label="Education"
-            icon={GraduationCap}
-            />
-            <TabsTrigger
-              value="research"
-              label="Research"
-              icon={FlaskConical}
-            />
-          </TabsList>
+          <div className="w-full overflow-x-scroll overflow-y-hidden sm:w-auto">
+            <TabsList variant="line" className="w-full sm:w-fit">
+              <TabsTrigger
+                value="projects"
+                label="Projects"
+                icon={FolderOpen}
+              />
+              <TabsTrigger
+                value="experience"
+                label="Experience"
+                icon={BriefcaseBusiness}
+              />
+              <TabsTrigger
+                value="education"
+                label="Education"
+                icon={GraduationCap}
+              />
+              <TabsTrigger
+                value="research"
+                label="Research"
+                icon={FlaskConical}
+              />
+            </TabsList>
           </div>
           <a
             href="/CV_Matheus_Tregnago_en.pdf"
