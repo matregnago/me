@@ -13,19 +13,19 @@ export const ResearchEntry = ({ research }: ResearchEntryProps) => {
   return (
     <Card className="bg-transparent">
       <CardContent>
-        <div className="flex w-full flex-row gap-4">
+        <div className="flex w-full flex-col gap-4 sm:flex-row">
           <img
-            className="h-32 w-40 shrink-0 rounded-md object-cover"
+            className="aspect-video w-full rounded-md object-cover sm:h-32 sm:w-40 sm:shrink-0"
             src={research.image}
             alt={research.title}
           />
 
-          <div className="flex flex-1 flex-col">
-            <h1 className="font-heading text-base font-medium text-foreground">
+          <div className="flex min-w-0 flex-1 flex-col">
+            <h1 className="font-heading text-sm font-medium leading-snug text-foreground sm:text-base">
               {research.title}
             </h1>
 
-            <div className="mt-1 flex flex-wrap gap-x-1 text-sm text-muted-foreground">
+            <div className="mt-1.5 flex flex-wrap gap-x-1 gap-y-0.5 text-sm text-muted-foreground">
               {research.authors.map((author, index) => (
                 <span key={author.name}>
                   <a
@@ -41,12 +41,17 @@ export const ResearchEntry = ({ research }: ResearchEntryProps) => {
               ))}
             </div>
 
-            <p className="mt-1 text-sm text-muted-foreground italic">
+            <p className="mt-1 text-sm leading-snug text-muted-foreground italic">
               {research.event}, {research.year}
             </p>
 
-            <div className="mt-3 flex items-center gap-2">
-              <Button variant="outline" size="sm" className="inline-flex" onClick={() => setIsAbsOpen(!isAbsOpen)}>
+            <div className="mt-3 flex flex-wrap items-center gap-3 sm:gap-2">
+              <Button
+                variant="outline"
+                size="sm"
+                className="inline-flex"
+                onClick={() => setIsAbsOpen(!isAbsOpen)}
+              >
                 <Summary className="size-4" />
                 ABS
               </Button>
@@ -55,7 +60,7 @@ export const ResearchEntry = ({ research }: ResearchEntryProps) => {
                 href={research.pdf}
                 target="_blank"
                 rel="noreferrer"
-                className={"inline-flex items-center gap-1.5 text-sm hover:text-foreground hover:underline"}
+                className="inline-flex items-center gap-1.5 text-sm hover:text-foreground hover:underline"
               >
                 <FileText className="size-4" />
                 PDF({research.lang})
@@ -64,7 +69,11 @@ export const ResearchEntry = ({ research }: ResearchEntryProps) => {
             </div>
           </div>
         </div>
-        {isAbsOpen && <p className="leading-relaxed mt-5 text-sm text-justify">{research.abs}</p>}
+        {isAbsOpen && (
+          <p className="mt-4 text-left text-sm leading-relaxed sm:mt-5 sm:text-justify">
+            {research.abs}
+          </p>
+        )}
       </CardContent>
     </Card>
   )

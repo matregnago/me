@@ -61,13 +61,22 @@ export const MainTabs = () => {
             <p className="text-xs">Download CV</p>
           </a>
         </div>
-        <TabsContent className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-3" value="projects">
+        <TabsContent
+          className="grid grid-cols-1 gap-4 pt-3 sm:grid-cols-2"
+          value="projects"
+        >
+          <h2 className="font-heading text-xl font-medium text-foreground sm:hidden">
+            Projects
+          </h2>
           {projects.map((project, idx) => (
             <ProjectEntry project={project} key={idx} />
           ))}
         </TabsContent>
 
         <TabsContent className="pt-3" value="experience">
+          <h2 className="mb-4 font-heading text-xl font-medium text-foreground sm:hidden">
+            Experience
+          </h2>
           {experience.map((exp, idx) => (
             <ExperienceEntry
               experience={exp}
@@ -78,19 +87,21 @@ export const MainTabs = () => {
         </TabsContent>
 
         <TabsContent value="education" className="flex flex-col gap-3 pt-3">
+          <h2 className="font-heading text-xl font-medium text-foreground sm:hidden">
+            Education
+          </h2>
           {education.map((ed, idx) => (
             <EducationEntry education={ed} key={idx} />
           ))}
         </TabsContent>
-
-
         <TabsContent value="research" className="flex flex-col gap-3 pt-3">
+          <h2 className="font-heading text-xl font-medium text-foreground sm:hidden">
+            Research
+          </h2>
           {research.map((rs, idx) => (
             <ResearchEntry research={rs} key={idx} />
           ))}
         </TabsContent>
-
-
         <TabsContent value="blog">
           <div className="flex h-64 flex-col items-center justify-center gap-2">
             <PencilLine className="size-14 rounded-lg border bg-card p-3" />
