@@ -320,6 +320,7 @@
 
     html {
         @apply font-sans;
+        scrollbar-gutter: stable;
         font-feature-settings:
             "rlig" 1,
             "calt" 1;

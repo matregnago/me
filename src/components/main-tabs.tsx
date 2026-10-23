@@ -18,16 +18,19 @@ import researchData from "../../data/research.json"
 import type { Education, Experience, Project, Research } from "@/lib/types"
 import { ResearchEntry } from "./research"
 
-export const MainTabs = () => {
+interface MainTabsProps {
+  selectedTab?: string
+}
+
+export const MainTabs = ({ selectedTab }: MainTabsProps) => {
   const { projects } = projectsData as { projects: Project[] }
   const { experience } = experienceData as { experience: Experience[] }
   const { education } = educationData as { education: Education[] }
   const { research } = researchData as { research: Research[] }
-
   return (
     <section>
-      <Tabs defaultValue="projects">
-        <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-3 sm:gap-0 mt-1 sm:mt-0">
+      <Tabs defaultValue={selectedTab || "projects"}>
+        <div className="mt-1 flex flex-col gap-3 sm:mt-0 sm:flex-row sm:items-center sm:justify-between sm:gap-0">
           <div className="w-full sm:w-auto">
             <TabsList variant="line" className="w-full sm:w-fit">
               <TabsTrigger
@@ -50,12 +53,15 @@ export const MainTabs = () => {
                 label="Research"
                 icon={FlaskConical}
               />
+              {/*<TabsTrigger value="blog" label="Blog" icon={PencilLine} />*/}
             </TabsList>
           </div>
           <a
             href="/CV_Matheus_Tregnago_en.pdf"
             target="_blank"
-            className={"-order-1 sm:order-1 w-28 download-button flex flex-row gap-1 items-center"}
+            className={
+              "download-button -order-1 flex w-28 flex-row items-center gap-1 sm:order-1"
+            }
           >
             <Download className="size-3" />
             <p className="text-xs">Download CV</p>
