@@ -3,7 +3,7 @@ export type Project = {
   img: string
   summary: string
   description: string
-  source: string
+  code: string
   website: string | null;
   stack?: string[]
 }
@@ -35,7 +35,8 @@ export type Research = {
   lang: string;
   authors: Array<{ name: string; link: string }>
   event: string
-  pdf: string
+  pdf?: string
+  code?: string
   image: string
   abs: string
   stack?: string[]

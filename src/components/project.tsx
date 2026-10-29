@@ -10,6 +10,12 @@ import type { Project } from "@/lib/types"
 import { Code, ExternalLink } from "lucide-react"
 import { skills } from "@/lib/constants"
 
+const resourceLinkClassName = buttonVariants({
+  variant: "outline",
+  size: "sm",
+  className: "gap-2 px-3",
+})
+
 interface ProjectEntryProps {
   project: Project
 }
@@ -48,13 +54,13 @@ export function ProjectEntry({ project }: ProjectEntryProps) {
             })}
           </div>
         )}
-        <div className="flex gap-2">
+        <div className="flex flex-wrap items-center gap-3">
           <a
-            href={project.source}
+            href={project.code}
             target="_blank"
-            className={buttonVariants({ size: "sm" })}
+            className={resourceLinkClassName}
           >
-            <Code />
+            <Code className="size-4" />
             Source code
           </a>
 
@@ -62,9 +68,9 @@ export function ProjectEntry({ project }: ProjectEntryProps) {
             <a
               href={project.website}
               target="_blank"
-              className={buttonVariants({ size: "sm" })}
+              className={resourceLinkClassName}
             >
-              <ExternalLink />
+              <ExternalLink className="size-4" />
               Website
             </a>
           )}

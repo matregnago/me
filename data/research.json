@@ -1,11 +1,65 @@
 {
   "research": [
     {
+      "title": "On the Viability of using Simulation to Assess Cloud Offload for HPC Workloads",
+      "authors": [
+        {
+          "name": "Otho José Sirtoli Marcondes",
+          "link": "https://github.com/othomarcondes"
+        },
+        {
+          "name": "Rayan Raddatz de Matos",
+          "link": "https://github.com/rddtz"
+        },
+        {
+          "name": "Matheus Tregnago",
+          "link": "#"
+        },
+        {
+          "name": "Pedro Henrique Boniatti Colle",
+          "link": "https://github.com/sacolle"
+        },
+        {
+          "name": "Lucas Mello Schnorr",
+          "link": "https://www.inf.ufrgs.br/~schnorr/"
+        }
+      ],
+      "event": "IEEE/ACM International Conference on Utility and Cloud Computing (UCC)",
+      "lang": "en",
+      "image": "/ucc2026.png",
+      "abs": "Public clouds now offer the same class of accelerators that a fixed-size on-premise HPC cluster lacks, making cloud offload an attractive way to elastically scale capacity. Whether this is worthwhile for tightly coupled, communication-heavy workloads, however, remains largely unanswered: prior work either treats communication-bound applications and cloud offload as incompatible on qualitative grounds or studies only loosely coupled workloads whose tasks can be freely relocated. We address this gap for a representative tightly coupled workload, an LU factorization implemented with StarPU-MPI, by treating cloud offload as a multi-factor experimental design rather than a single yes/no question. Because exploring hundreds of configurations on rented infrastructure is impractical, and because spanning independently managed sites with a single MPI job is itself an open engineering problem, we evaluate the design entirely through simulation: SimGrid supplies the network model and StarPU-SMPI the compute model, both driven by performance models calibrated on real local machines and by wide-area latency and bandwidth measurements between our on-premise sites and five AWS regions. Across homogeneous and heterogeneous local/cloud pairings and three data-distribution strategies (2D Block-Cyclic, 1D-1D, and its constrained variant 1D-1D-C), we find that offloading degrades performance at today's measured bandwidths, and that this is a bandwidth, not a latency, limitation. We further show that the choice of data distribution matters more than the network's quality. By concentrating computation on the faster, better-connected cloud nodes, 1D-1D-C recovers most of the loss that 1D-1D suffers under the same network conditions. Finally, by varying bandwidth directly, wwhich offloading starts to pay off, demonstrating thatsimulation is a viable way to assess the feasibility  coupled HPC workloads before committing to a realdeployment.",
+      "year": 2026
+    },
+    {
+      "title": "Analysis of the Impact of Task-Based Runtimes on the Performance of Dense Linear Algebra Algorithms",
+      "authors": [
+        {
+          "name": "Matheus Tregnago",
+          "link": "#"
+        },
+        {
+          "name": "Lucas Mello Schnorr",
+          "link": "https://www.inf.ufrgs.br/~schnorr/"
+        },
+        {
+          "name": "Philippe Olivier Alexandre Navaux",
+          "link": "http://lattes.cnpq.br/5554254760869075"
+        }
+      ],
+      "event": "Simpósio em Sistemas Computacionais de Alto Desempenho (SSCAD)",
+      "pdf": "https://github.com/matregnago/chameleon-runtime-benchmarks/blob/main/papers/2026_SSCAD/SSCAD.pdf",
+      "lang": "pt",
+      "code": "https://github.com/matregnago/chameleon-runtime-benchmarks",
+      "image": "/sscad2026.png",
+      "abs": "Dependent task scheduling runtimes such as StarPU and PaRSEC abstract away the complexity of heterogeneous platforms, but they adopt different scheduling and data management strategies. This work compares the performance of the two runtimes on the Cholesky and LU (without pivoting) factorizations from the Chameleon library, keeping the linear algebra library fixed in order to isolate the effect of the runtime. This study required extending PaRSEC’s Dynamic Task Discovery (DTD) interface and Chameleon’s codelets with GPU support. The experiments show that StarPU outperforms or matches PaRSEC in most cases. =parsec:gd= only has an advantage on the machine with an RTX 4070 (455 GFLOPS in FP64, roughly half the CPU’s capacity). On the machine with an RTX 4090 (1,290 GFLOPS, nearly twice the CPU’s capacity), StarPU wins across the entire evaluated range, with an advantage of about 30% even at each runtime’s optimal block size.",
+      "year": 2026
+    },
+    {
       "title": "Parallel GPU Implementation for Coral Fractal Generation",
       "authors": [
         {
           "name": "Matheus Tregnago",
-          "link": "https://github.com/matregnago"
+          "link": "#"
         },
         {
           "name": "André Luis Martinotto",
@@ -17,8 +71,9 @@
         }
       ],
       "event": "Escola Regional de Alto Desempenho da Região Sul (ERAD-RS)",
-      "pdf": "/papers/dla-cuda.pdf",
+      "pdf": "https://doi.org/10.5753/eradrs.2026.20554",
       "lang": "pt",
+      "code": "https://github.com/matregnago/dla-fractal-cuda",
       "image": "/eradrs2026.png",
       "abs": "This paper describes a parallel GPU implementation for generating coral fractals using the Diffusion-Limited Aggregation (DLA) algorithm. The implementation was developed in C++ and parallelized using the CUDA platform. A speedup of up to 40x was achieved; however, the speedup was observed to plateau due to the maximum number of threads that can be active simultaneously on the GPU.",
       "year": 2026
@@ -28,7 +83,7 @@
       "authors": [
         {
           "name": "Matheus Tregnago",
-          "link": "https://github.com/matregnago"
+          "link": "#"
         },
         {
           "name": "Ricardo Bregalda",
@@ -42,6 +97,7 @@
       "event": "Escola Regional de Alto Desempenho da Região Sul (ERAD-RS)",
       "pdf": "https://doi.org/10.5753/eradrs.2025.6527",
       "lang": "pt",
+      "code": "https://github.com/matregnago/distributed-iot-analytics",
       "image": "/eradrs2025.png",
       "abs": "This paper evaluates the use of different parallelism techniques for processing IoT data in smart cities. To this end, OpenMP, MPI, Multiprocessing, and Dask were used to identify sensor failures and assess performance gains, achieving a speedup of up to 5.16 with Dask. The results reinforce the advantages of using parallelism for processing large volumes of data.",
       "year": 2025
