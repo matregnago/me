@@ -9,6 +9,7 @@ import { buttonVariants } from "./ui/button"
 import type { Project } from "@/lib/types"
 import { Code, ExternalLink } from "lucide-react"
 import { skills } from "@/lib/constants"
+import * as ImageZoom from "./ui/image-zoom"
 
 const resourceLinkClassName = buttonVariants({
   variant: "outline",
@@ -27,10 +28,17 @@ export function ProjectEntry({ project }: ProjectEntryProps) {
         <CardDescription>{project.summary}</CardDescription>
       </CardHeader>
       <CardContent className="space-y-3">
-        <img
-          className="h-70 w-full shrink-0 rounded-md object-cover"
-          src={project.img}
-        />
+        <div className="aspect-4/3 w-full rounded-lg border p-2">
+          <ImageZoom.Root>
+            <ImageZoom.Trigger className="h-full w-full items-center justify-center">
+              <ImageZoom.Image
+                className="h-auto max-h-full w-auto max-w-full rounded-sm"
+                src={project.img}
+                alt={project.name}
+              />
+            </ImageZoom.Trigger>
+          </ImageZoom.Root>
+        </div>
         <p>{project.description}</p>
 
         {project.stack && (

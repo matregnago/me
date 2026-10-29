@@ -3,6 +3,7 @@ import type { Research } from "@/lib/types"
 import { Code, FileText, Summary } from "lucide-react"
 import { Button, buttonVariants } from "./ui/button"
 import { useState } from "react"
+import { ImageZoom } from "./ui/image-zoom"
 
 const resourceLinkClassName = buttonVariants({
   variant: "outline",
@@ -19,9 +20,9 @@ export const ResearchEntry = ({ research }: ResearchEntryProps) => {
   return (
     <Card className="bg-transparent">
       <CardContent>
-        <div className="flex w-full flex-col gap-4 sm:flex-row">
-          <img
-            className="aspect-video w-full rounded-md object-cover sm:h-32 sm:w-40 sm:shrink-0"
+        <div className="flex w-full flex-col gap-4 sm:flex-row sm:items-start">
+          <ImageZoom
+            className="aspect-video w-full rounded-md sm:h-32 sm:w-40 sm:shrink-0"
             src={research.image}
             alt={research.title}
           />
