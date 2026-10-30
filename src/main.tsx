@@ -4,12 +4,14 @@ import {
   createRootRoute,
   createRoute,
   createRouter,
-  // redirect,
+  redirect,
   RouterProvider,
 } from "@tanstack/react-router"
 import "./index.css"
 import App from "./App.tsx"
 import { ThemeProvider } from "@/components/theme-provider.tsx"
+import { getBlogPosts } from "./lib/utils.ts"
+import { Post } from "./components/post.tsx"
 
 const rootRoute = createRootRoute()
 
@@ -21,28 +23,32 @@ const indexRoute = createRoute({
   }),
   component: App,
 })
-// const blogRedirectRoute = createRoute({
-//   getParentRoute: () => rootRoute,
-//   path: "blog",
-//   beforeLoad: () => {
-//     throw redirect({
-//       to: "/",
-//       replace: true,
-//       search: { t: "blog" },
-//     })
-//   },
-// })
-//
-// const blogRoute = createRoute({
-//   getParentRoute: () => rootRoute,
-//   path: "blog/$post",
-//   component: () => <h1>Blog!</h1>,
-// })
+
+const blogRedirectRoute = createRoute({
+  getParentRoute: () => rootRoute,
+  path: "blog",
+  beforeLoad: () => {
+    throw redirect({
+      to: "/",
+      replace: true,
+      search: { t: "blog" },
+    })
+  },
+})
+
+const posts = getBlogPosts();
+const postsRoutes = posts.map(([slug, module]) => {
+  return createRoute({
+    getParentRoute: () => rootRoute,
+    path: `blog/${slug}`,
+    component: () => <Post Content={module.default} />,
+  })
+})
 
 const routeTree = rootRoute.addChildren([
   indexRoute,
-  // blogRoute,
-  // blogRedirectRoute,
+  blogRedirectRoute,
+  ...postsRoutes,
 ])
 
 const router = createRouter({ routeTree })

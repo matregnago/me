@@ -17,6 +17,8 @@ import educationData from "../../data/education.json"
 import researchData from "../../data/research.json"
 import type { Education, Experience, Project, Research } from "@/lib/types"
 import { ResearchEntry } from "./research"
+import { getBlogPosts } from "@/lib/utils"
+import { BlogEntry } from "./blog"
 
 interface MainTabsProps {
   selectedTab?: string
@@ -27,6 +29,7 @@ export const MainTabs = ({ selectedTab }: MainTabsProps) => {
   const { experience } = experienceData as { experience: Experience[] }
   const { education } = educationData as { education: Education[] }
   const { research } = researchData as { research: Research[] }
+  const blogPosts = getBlogPosts()
   return (
     <section>
       <Tabs defaultValue={selectedTab || "projects"}>
@@ -108,11 +111,20 @@ export const MainTabs = ({ selectedTab }: MainTabsProps) => {
             <ResearchEntry research={rs} key={idx} />
           ))}
         </TabsContent>
-        <TabsContent value="blog">
-          <div className="flex h-64 flex-col items-center justify-center gap-2">
-            <PencilLine className="size-14 rounded-lg border bg-card p-3" />
-            <p className="text-base">Nothing to see here.</p>
-          </div>
+        <TabsContent value="blog" className="flex flex-col gap-3 pt-3">
+          {blogPosts.length > 0 ? (
+            blogPosts.map(([slug, module]) => (
+              <BlogEntry
+                slug={slug}
+                metadata={module.frontmatter}
+              />
+            ))
+          ) : (
+            <div className="flex h-64 flex-col items-center justify-center gap-2">
+              <PencilLine className="size-14 rounded-lg border bg-card p-3" />
+              <p className="text-base">Nothing to see here.</p>
+            </div>
+          )}
         </TabsContent>
       </Tabs>
     </section>

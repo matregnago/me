@@ -1,3 +1,5 @@
+import type { MDXModule } from "mdx/types"
+
 export type Project = {
   name: string
   img: string
@@ -40,4 +42,15 @@ export type Research = {
   image: string
   abs: string
   stack?: string[]
+}
+
+export type BlogMetadata = {
+  title: string
+  date: string
+  summary: string
+  tags: string[]
+}
+
+export type BlogMDXModule = MDXModule & {
+  frontmatter: BlogMetadata
 }
